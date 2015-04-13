@@ -1,0 +1,128 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title></title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" /> 
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script> 
+</head> 
+
+<body> 
+<div data-role="page" id="main" data-fullscreen="false"> 
+  <div data-role="header"> 
+  <h1>구조해석프로그램</h1>
+    <div data-role="navbar"> 
+        <ul> 
+            <li><a href="#length" >길  이</a></li> 
+            <li><a href="#inertia" >단면계수</a></li> 
+            <li><a href="#elasticity" >탄성계수</a></li> 
+        </ul> 
+        <ul> 
+          <li><a href="#addsingleload" >단일하중</a></li> 
+            <li><a href="#addmoment" >모멘트</a></li> 
+            <li><a href="#adddistributedload" >분포하중</a></li> 
+        </ul>
+    </div>  <!-- navbar 끝 -->           
+  </div><!-- header 끝 --> 
+  <div data-role="content"> 
+  </div> 
+  <div data-role="footer" data-position="fixed"> 
+    <div data-role="navbar" > 
+      <ul>
+            <li><a href="#calculate">계산하기</a></li>            
+        </ul>
+    </div>  <!-- navbar 끝 -->    
+  </div> <!-- footer 끝 --> 
+</div>
+
+<!--length page=-->
+<div data-role="page" id="length">
+<div data-role="header">
+    <h1>길이설정</h1>
+  </div>
+<div data-role="content">
+    <input type="text" id="length_input" name="length" value="number"> 
+</div>
+<div data-role="footer">
+    <div data-role="navbar" > 
+    <ul>
+ 	<li><a href="#main" data-direction="reverse">확인</a></li>
+ 	<li><a href="#main" data-direction="reverse">취소</a></li>
+    </ul>
+    </div>
+  </div>
+  </div>
+  
+ <!-- inertia page-->
+ <div data-role="page" id="inertia">
+<div data-role="header">
+    <h1>머리글</h1>
+  </div>
+<div data-role="content">내용</div>
+<div data-role="footer">
+    <h4>바닥글</h4>
+  </div>
+  </div>
+  
+  <!--elasticity page=-->
+<div data-role="page" id="elasticity">
+  <div data-role="header">
+    <h1>머리글</h1>
+  </div>
+<div data-role="content">내용</div>
+<div data-role="footer">
+    <h4>바닥글</h4>
+  </div>
+  </div>
+  </div>
+  
+ <!-- addsingleload page-->
+ <div data-role="page" id="addsingleload">
+<div data-role="header">
+    <h1>머리글</h1>
+  </div>
+<div data-role="content">내용</div>
+<div data-role="footer">
+    <h4>바닥글</h4>
+  </div>
+  </div>
+  
+    <!--addmoment page=-->
+<div data-role="page" id="addmoment">
+  <div data-role="header">
+    <h1>머리글</h1>
+<div data-role="content">내용</div>
+<div data-role="footer">
+    <h4>바닥글</h4>
+</div>
+</div>
+</div>
+  
+ <!-- adddistributedload page-->
+<div data-role="page" id="adddistributedload">
+<div data-role="header">
+    <h1>머리글</h1>
+  </div>
+<div data-role="content">내용</div>
+<div data-role="footer">
+    <h4>바닥글</h4>
+  </div>
+  </div>
+
+   <!-- calculate page-->
+ <div data-role="page" id="calculate">
+  <div data-role="header">
+    <h1>머리글</h1>
+  </div>
+  <div data-role="content">내용</div>
+  <div data-role="footer">
+    <h4>바닥글</h4>
+  </div>
+  
+</div> 
+
+
+</body> 
+</html> 
