@@ -1,3 +1,4 @@
+	
 	var b;
 	var h;
 	var inertia =b*h*h*h/12;
